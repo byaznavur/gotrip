@@ -11,6 +11,13 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 20px 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px 20px;
+  }
 }
 
 button {
@@ -90,7 +97,8 @@ nav .list {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 27px 50px;
+    padding: 0;
+    width: 100%;
   }
 
   nav .list {
@@ -105,10 +113,10 @@ nav .list {
     position: absolute;
     padding: 20px 20px;
     gap: 10px;
-    top: 80px;
+    top: 70px;
     left: 0;
     width: 100%;
-    min-height: 50vh;
+    min-height: 70vh;
     background-color: rgba(31, 94, 55, 0.9);
     z-index: 10;
   }
@@ -145,5 +153,176 @@ nav .list {
   nav .auth-show button {
     width: 100%;
     text-align: center;
+  }
+}
+/* Herro  */
+
+.herro-wrapper {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  background-color: rgba(31, 94, 55, 1);
+}
+
+.wrapper-image {
+  width: 70%;
+}
+
+.wrapper-image img {
+  width: 100%;
+}
+.wrapper-content {
+  width: 50%;
+}
+.wrapper-content h1 {
+  font-family: Poppins;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 82.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 20px;
+  color: #fff;
+}
+.wrapper-content p {
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 37.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 30px 0;
+  color: #fff;
+}
+.wrapper-content a:nth-child(1) {
+  padding: 10px 20px;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 37.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ffffff;
+  transition: all 0.5s ease-in;
+  border-radius: 10px;
+  background: #24222240;
+}
+
+.wrapper-content a:hover {
+  color: #24222240;
+  background-color: #fff;
+}
+
+.wrapper-content a {
+  padding: 10px 20px;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 37.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ffffff;
+  transition: all 0.6 s ease-in;
+  border-radius: 10px;
+  background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%);
+}
+
+.wrapper-content a:hover {
+  color: #ff7b4e;
+  background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .herro-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .wrapper-image {
+    width: 100%;
+  }
+
+  .wrapper-image img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  .wrapper-content {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .wrapper-content h1 {
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 52.5px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 20px;
+    color: #fff;
+  }
+  .wrapper-content p {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27.5px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 30px 0;
+    color: #fff;
+  }
+  .wrapper-content a:nth-child(1) {
+    padding: 10px 20px;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffff;
+    transition: all 0.5s ease-in;
+    border-radius: 10px;
+    background: #24222240;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .wrapper-content a:hover {
+    color: #24222240;
+    background-color: #fff;
+  }
+
+  .wrapper-content a {
+    padding: 10px 20px;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffff;
+    transition: all 0.6 s ease-in;
+    border-radius: 10px;
+    background: linear-gradient(129.54deg, #ff7b4e 15.57%, #ff584e 95.03%);
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .wrapper-content a:hover {
+    color: #ff7b4e;
+    background: #fff;
   }
 }
